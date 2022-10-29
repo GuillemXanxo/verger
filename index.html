@@ -2,47 +2,77 @@
 
 <html lang="ca-ES">
     <head>
-        <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+        
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap');
-        </style>  
+        </style>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
-        <header class="header">
-            <div class="topnav">
-                <a class="topnav-element" href="#home">Qui som</a>
-                <a class="topnav-element" href="#trees">Els nostres arbres</a>
-                <a class="topnav-element" href="#tips">Consells i serveis</a>
-                <a class="topnav-element" href="#friends">Projectes amics</a>
-                <a class="topnav-element" href="contact.html">Contacte</a>
+        <nav class="navbar navbar-expand-lg" style="background-color: #54843e;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/images/logo.png" alt="Lo Verger" width="200" height="59">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#" style="color:white; font-weight: bold;">Qui som</a>
+                  <a class="nav-link" href="#" style="color:white">Els nostres arbres</a>
+                  <a class="nav-link" href="#" style="color:white">Consells i serveis</a>
+                  <a class="nav-link" href="#" style="color:white">Projectes amics</a>
+                  <a class="nav-link" href="#" style="color:white">Contacte</a>
+                </div>
               </div>
-            <a href="/" class="logo">
-                <img src="/assets/images/logo.png" height="35" class="logo">
-            </a>
-        </header>
-        <div class="hero">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h1 class="hero-title">Lo Verger</h1>
-                    <h3 class="hero-subtitle">Viver de varietats tradicionals d'arbres fruiters d'aquí i d'allà</h3>
+            </div>
+          </nav>
+        <div class="p-5 text-center bg-image" style="background-image: url('/assets/images/hero.jpeg');height: 600px;">
+            <div class="mask" style="font-family: 'Laila';">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                    <h1 class="mb-3">Lo Verger</h1>
+                    <h4 class="mb-3">Viver de varietats tradicionals d'arbres fruiters d'aquí i d'allà</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="articles">
-            <div class="section">
-                <a class="section-text" href="#contact">
-                    <p style="color:black">Empeltem i cultivem varietats tradicionals d’arbres fruiters del Pallars, del Pirineu i d’altres racons sense fer ús de cap pesticida, ni herbicida, ni adob químic. Hem seleccionat les varietats que cultivem pel seu gust, la resistència a malalties i per la seva adaptació a climes d’alta i mitja muntanya.</p>
-                </a>
-                <img class="section-image" src="/assets/images/section1.jpeg"/>
+      </div>
+      <div class="row section">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">Empeltem i cultivem varietats tradicionals d’arbres fruiters del Pallars, del Pirineu i d’altres racons sense fer ús de cap pesticida, ni herbicida, ni adob químic. Hem seleccionat les varietats que cultivem pel seu gust, la resistència a malalties i per la seva adaptació a climes d’alta i mitja muntanya.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="section">
-                <a class="section-text" href="#contact">
-                    <p style="color:black">Ja podeu fer la vostra comanda per l’hivern 2022 - 2023! </p>
-                    <p style="color:black">Aquí trobareu les varietats d’arbres fruiters que us proposem. Escolliu les que estiguin més adaptades al vostre clima, al vostre sòl i al vostre gust!</p>
-                </a>
-                <img class="section-image" src="/assets/images/section2.jpeg"/>
-            </div>
+          </div>
         </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="/assets/images/section1.jpeg"/>
+          </div>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p style="color:black">Ja podeu fer la vostra comanda per l’hivern 2022 - 2023! </p>
+                <p style="color:black">Aquí trobareu les varietats d’arbres fruiters que us proposem. Escolliu les que estiguin més adaptades al vostre clima, al vostre sòl i al vostre gust!</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="/assets/images/section2.jpeg"/>
+          </div>
+        </div>
+      </div>
     </body>
 
 </html>
