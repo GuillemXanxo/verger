@@ -20,18 +20,30 @@
               <a class="navbar-brand" href="#">
                 <img src="/assets/images/logo.png" alt="Lo Verger" width="200" height="59">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#home" style="color:white; font-weight: bold;">Inici</a>
-                  <a class="nav-link" href="we.html" style="color:white">Qui som</a>
-                  <a class="nav-link" href="#trees" style="color:white">Els nostres arbres</a>
-                  <a class="nav-link" href="#services" style="color:white">Consells i serveis</a>
-                  <a class="nav-link" href="#friends" style="color:white">Projectes amics</a>
-                  <a class="nav-link" href="#contact" style="color:white">Contacte</a>
-                </div>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content:flex-end;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#home" style="color:white;">Inici</a>
+                    </li>
+                    <li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#we" style="color:white;">Qui som</a>
+                    </li>
+                    <li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#trees" style="color:white;">Els nostres arbres</a>
+                    </li>
+                    <!--<li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#services" style="color:white;">Consells i serveis</a>
+                    </li>-->
+                    <!--<li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#friends" style="color:white;">Projectes amics</a>
+                    </li>-->
+                    <li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#contact" style="color:white;">Contacte</a>
+                    </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -47,13 +59,12 @@
             </div>
       </div>
       <!-- Sections -->
-      <div class="row section flex-wrap:wrap" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
+      <div id="home" class="row section flex-wrap:wrap" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
         <div class="col-md-6">
           <div class="card" style="--bs-card-border-color: none;">
             <div class="card-body">
-              <h2 class="card-title">Special title treatment</h5>
               <p class="card-text">Empeltem i cultivem varietats tradicionals d’arbres fruiters del Pallars, del Pirineu i d’altres racons sense fer ús de cap pesticida, ni herbicida, ni adob químic. Hem seleccionat les varietats que cultivem pel seu gust, la resistència a malalties i per la seva adaptació a climes d’alta i mitja muntanya.</p>
-              <a href="#we" class="btn btn-primary" style="background-color: #54843e;">Go somewhere</a>
+              <a href="#we" class="btn btn-primary" style="background-color: #54843e;">Qui som</a>
             </div>
           </div>
         </div>
@@ -63,14 +74,14 @@
           </div>
         </div>
       </div>
-      <div class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
+      <div id="trees" class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
         <div class="col-md-6">
           <div class="card" style="--bs-card-border-color: none;">
             <div class="card-body">
-              <h2 class="card-title">Special title treatment</h5>
-              <p style="color:black">Ja podeu fer la vostra comanda per l’hivern 2022 - 2023! </p>
+                <h3>Catàleg</h3>
+                <p style="color:black">Ja podeu fer la vostra comanda per l’hivern 2022 - 2023! </p>
                 <p style="color:black">Aquí trobareu les varietats d’arbres fruiters que us proposem. Escolliu les que estiguin més adaptades al vostre clima, al vostre sòl i al vostre gust!</p>
-              <a href="#trees" class="btn btn-primary" style="background-color: #54843e;">Go somewhere</a>
+                <a href="/assets/cataleg_loVerger.pdf" class="btn btn-primary" style="background-color: #54843e;">Descarrega catàleg</a>
             </div>
           </div>
         </div>
@@ -80,6 +91,91 @@
           </div>
         </div>
       </div>
+
+      <div id="we" class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
+        <div class="col-md-6">
+          <div class="card" style="--bs-card-border-color: none;">
+            <div class="card-body">
+              <h2 class="card-title" style="margin-bottom: 25px;">Qui som</h2>
+              <h3 class="card-title">El viver</h3>
+              <p class="card-text">Totes les varietats d’arbres fruiters que el viver Lo Verger cultiva són varietats tradicionals,  varietats que han estat seleccionades i conservades pel seu gust excepcional, la rusticitat i, en la mesura del possible, per la seva resistència a malalties. Però la recerca de noves varietats no s’atura. Si coneixeu arbres que van ser plantats per padrines i padrins i que la seva fruita sigui excepcionalment bona, poseu-vos en contacte amb nosaltres! <br/><br/>El viver es troba situat a 600 metres d’alçada, a Gerri de la Sal, a l’extrem sud del Pallars Sobirà, a cavall entre la zona prepirinenca i la zona pirinenca. L’origen de les varietats és divers, des del Pallars fins a altres racons d’Europa. Sobretot, referent a les varietats pallareses, es busca salvaguardar el patrimoni fruiter únic de la vessant sud pirinenca, el qual ha anat quedant a l’oblit amb l’abandonament dels cultius dels darrers anys.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="/assets/images/empelts.jpeg"/>
+          </div>
+        </div>
+      </div>
+      <div class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
+        <div class="col-md-6">
+          <div class="card" style="--bs-card-border-color: none;">
+            <div class="card-body">
+              <p style="color:black">Es cultiva una superfície d’uns 1200 m² sense fer ús de cap pesticida, ni herbicida, ni adob químici i limitant al màxim les llaurades. Els arbres els cuidem de manera artesanal amb algun preparat natural i una mica de compost certificat ecològic. <br/><br/>El viver Lo Verger és una aventura que tot just comença, el viver va començar a germinar a principis de 2022. Està sent un primer any de cultiu climatològicament complicat, primer van ser les gelades tardanes de principis d’abril, després va ser la sequera i les temperatures tòrrides d’aquest estiu i per acabar, vam patir una forta pedregada a principis de setembre. Però malgrat tot, els arbres estan sans i amb ganes de trobar casa nova! </p>
+              <br/>
+              <p style="color:black">El que més desitgem es poder repartir arbres fruiters al màxim d’horts, trossos i jardins. El viver us proposa una alternativa al model agroindustrial dominant i us dona la mà per treballar plegats per a la suficiència alimentària del territori.<br/>Estem inscrits al registre oficial d’empreses proveïdores de material vegetal amb el núm. ES-09250617.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="/assets/images/linies.jpeg"/>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        
+      <div class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 20px; display: flex; flex-wrap: wrap;">
+            <h3 class="col-12" style="margin-left: 20px; margin-right: 20px; margin-top: 30px;">L'equip</h3>
+            <div class="col-6 section-pep">
+                <div class="col">
+                    <div class="card" style="--bs-card-border-color: none;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pep</h5>
+                            <p class="card-text">El Pep encaixa al 100% amb la definició de neorural, va créixer en un ambient urbà del Baix Llobregat i fa de viverista al Pallars. Geòleg de formació, ha substituït les roques volcàniques pels empelts. <br/>Es va formar com a viverista al llarg d’un any treballant per diferents vivers del sud de França. El Pep s’encarrega de la planificació i de les tasques diàries del viver.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/assets/images/pep.jpeg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 section-mae">
+                <div class="col">
+                    <div class="card" style="--bs-card-border-color: none;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maéva</h5>
+                        <p class="card-text">La Maéva va créixer en un ambient rural del Massís Central francès. De formació és geòloga i professora de ciències naturals. La trobaràs al peu del canó quan al viver hi faltin mans per feines de precisió. <br/>La seva passió és divulgar coneixements, li encanta explicar com i perquè els empelts son una peça clau alhora de poder menjar fruita. </p>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/images/mae.jpeg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="row section" style="margin-left: 20px; margin-right: 20px; margin-top: 50px;">
+            <div class="col-md-6">
+              <div class="card" style="--bs-card-border-color: none;">
+                <div class="card-body">
+                  <h2 class="card-title" style="margin-bottom: 25px;">On estem</h2>
+                  <p class="card-text" style="font-weight:bold">Dades de contacte</p>
+                  <p>tel. 630076987</p>
+                  <p>correu info@loverger.cat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img src="/assets/images/map.png"/>
+              </div>
+            </div>
+          </div>
     </body>
 
 </html>
