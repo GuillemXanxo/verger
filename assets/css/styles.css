@@ -1,0 +1,13 @@
+/* Media queries (small devices) */
+@media screen and (max-width: 599px) {
+    #home-title{
+        font-size: 55px;
+    }
+}
+
+/* Media queries (medium and big devices) */
+@media screen and (min-width: 600px) {
+    #home-title{
+        font-size: 100px;
+    }
+}
